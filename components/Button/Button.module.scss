@@ -1,0 +1,44 @@
+.default {
+    color: green;
+    background: linear-gradient(#ffffff12 0%, #fff0 100%), #eceff2;
+    display: block;
+    border: none;
+    position: relative;
+    font-family: inherit;
+    outline: none;
+    user-select: none;
+    text-align: center;
+    appearance: none;
+    white-space: nowrap;
+    line-height: 24px;
+    padding: .5rem 1rem;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 32px;
+    cursor: pointer;
+    transition: color 0.15s ease 0s, background-color 0.15s ease 0s, box-shadow 0.15s ease 0s;
+    box-shadow: rgb(12 20 66 / 2%) 0 2px 4px, rgb(12 20 66 / 3%) 0px -1px 2px inset;
+
+    &:hover {
+        background: darkgrey;
+    }
+
+    &:not(:last-child) {
+        margin-right: 16px;
+        margin-bottom: 8px;
+        @media only screen and (max-width: 768px) {
+            margin-right: 8px;
+        }
+    }
+}
+
+.secondary {
+    composes: default;
+    color: #FFFFFF;
+    background: linear-gradient(#ffffff12 0%, #fff0 100%), #008ffd;
+    box-shadow: rgb(12 20 66 / 10%) 0 2px 4px, rgb(12 20 66 / 6%) 0 10px 40px, rgb(12 20 66 / 10%) 0 -1px 2px inset;
+
+    &:hover {
+        background: darkblue;
+    }
+}

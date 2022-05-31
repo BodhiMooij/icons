@@ -1,0 +1,16 @@
+.NavBar {
+    display: flex;
+    align-items: center;
+
+    a {
+        //font-size: 12px;
+        font-weight: bold;
+        + a {
+            margin-left: 3rem;
+        }
+    }
+}
+
+//.backToHome {
+//    margin: 3rem 0 0;
+//}

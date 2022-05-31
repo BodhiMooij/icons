@@ -1,0 +1,77 @@
+.heading2Xl {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.05rem;
+    margin: 1rem 0;
+}
+
+.headingXl {
+    max-width: 65%;
+    transition: opacity 1s cubic-bezier(0.17, 0.17, 0, 1) 0s, transform 1s 0s;
+
+    font-size: 84px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #19191b;
+    margin: 0;
+    @media only screen and (max-width: 1200px) {
+        font-size: 64px;
+    }
+    @media only screen and (max-width: 992px) {
+        max-width: 100%;
+        font-size: 56px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 48px;
+        line-height: 1.15;
+    }
+    @media only screen and (max-width: 480px) {
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    span {
+        display: inline;
+        -webkit-text-fill-color: transparent;
+        line-height: 1.1;
+        margin-bottom: -4px;
+        background: linear-gradient(to right, rgb(211, 215, 219) 50%, rgba(179, 207, 255, 0.7) 100%) rgb(120, 128, 136);
+        -webkit-background-clip: text;
+
+        @media only screen and (max-width: 992px) {
+            margin-bottom: -2px;
+        }
+    }
+}
+
+.headingLg {
+    composes: headingXl;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin: 1rem 0;
+}
+
+.headingMd {
+    composes: headingXl;
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.colorInherit {
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    margin: 0 0 1.25rem;
+}
+
+.lightText {
+    color: #666;
+}
